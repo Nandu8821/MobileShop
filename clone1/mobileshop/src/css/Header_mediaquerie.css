@@ -1,0 +1,61 @@
+/* Add this media query for responsiveness */
+@media screen  and (max-width: 768px) {
+    .nav_email,
+    .nav_call,
+    .nav_profile,
+    .nav_checkout,
+    .nav_wishlist {
+      display: none; /* Hide individual items on smaller screens */
+      overflow-x: hidden;
+    }
+
+
+    .nav_line{
+        display: none;
+    }
+  
+  
+    /* Show the menu icon and hide the search input, select category, and cart on smaller screens */
+    .Search_input,
+    .Select_Category,
+    .strect_line,
+    .cart_img {
+      display: none;
+    }
+  
+    /* Show the menu icon */
+    .menu_icon {
+      display: block;
+      width: 50px;
+      margin-top: 20px;
+      margin-right: 20px;
+      cursor: pointer;
+    }
+  
+    /* Hide the main logo on smaller screens */
+    .main_logo img {
+      display: none;
+    }
+  
+    /* Show the mobile menu when the menu icon is clicked */
+    .Links ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: rgba(107, 169, 210, 0.604);
+      position: absolute;
+      top: 90px;
+      left: 0;
+      right: 0;
+      z-index: 1;
+    }
+  
+    .Links li {
+      margin: 15px;
+      text-align: center;
+    }
+
+
+
+  }
+  
