@@ -1,4 +1,3 @@
-
 .footer{
     background-color: black;
     color: white;
@@ -24,13 +23,13 @@
 
 }
 .social-media img{
-    width: 30px;
-    height: 30px;
+    width: 60px;
+    height: 60px;
     padding: 10px;
 }
 
 
-@media (max-width:430px){
+@media (max-width:768px){
     .socialmedia-weblogo{
         width: 270px;
         /* padding-left:0px ; */

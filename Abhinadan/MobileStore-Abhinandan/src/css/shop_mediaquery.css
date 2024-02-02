@@ -1,12 +1,27 @@
 @media (max-width: 768px) {
     .banner {
         width: 100%;
-    height: 500px;
+        height: auto;
+        overflow: hidden;
+  }
+
+  .inside_banner{
+   
+    background-image: url(/public/images/scrollPages3.jpg) no-repeat center bottom;
+    width: 100%;
+    height: 300px;
+    scroll-behavior: left;
+    animation-name: an1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    background-position: center;
     animation-direction: normal;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url(/public/images/scrollPages3.jpg);
-  }
+    background-repeat:initial;
+    box-shadow: 0 26px 58px 0 rgba(0, 0, 0, .22), 0 5px 14px 0 rgba(0, 0, 0, .18);
+    overflow: hidden;
+    
+}
 
   .filter {
     width: 250px;
@@ -17,13 +32,15 @@
 }
 
 .midrange{
-    width: 100%;
-    height: 100px;
+    width: 80%;
+    padding-bottom: auto;
     margin-left: 20px;
     margin-top: 0px;
-    /* background-color: aquamarine; */
     background-position: center;
-    background-image: url(/public/images/shop.jpg);
+    animation-direction: normal;
+    background-repeat: no-repeat;
+    background-repeat:initial;
+    background-image: url(/public/images/shop.jpg) ;
 }
 
 
@@ -32,7 +49,7 @@
     display: grid;
     grid-template-columns: auto auto ;
      margin-left: 0%;
-     margin-top: 15px;
+     margin-top: 40px;
      
     
     

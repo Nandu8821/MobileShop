@@ -47,38 +47,72 @@
 
 .best_seller {
     width: 100%;
-    height: 530px;
     background-color: rgb(225, 241, 241);
-    margin-top: -25px;
-    display: grid;
-    grid-template-columns: auto auto auto ;
-}
-
-.best_seller span {
-    margin-left: 550px;
-    font-size: 40px;
-    margin-top: 30px;
-    position: absolute;
+    /* border: 2px solid black; */
+    overflow: hidden;
+    padding-bottom: 20px;
+ }
+ #Best_seller_heading{
+    display: flex;
     justify-content: center;
-    font-weight: bold;
-    /* background-image: url(/public/images/txtimage1.jpg); */
-    /* background-repeat: repeat; 
-   -webkit-background-clip: text; 
-   -webkit-text-fill-color: transparent; 
-   */
+    font-size: 40px;
+    font-weight: 600;
+ }
+ .grid_use{
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: 30% 30% 30%;
+ }
+ .best_mobile_box{
+    /* border: 2px solid black; */
+    width: 90%;
+    height: 80%;
+    margin: auto;
+    box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
 
+ }
+ .best_mobile_box div{
+    width: 100%;
+    height: 80%;
+ }
+ .best_mobile_box img{
+    width: 100%;
+    height: 100%;
+ }
+ .grid_use a div p{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+    margin: 0px;
+ }
+ /*
+#heading{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+     font-size: 30px;
+     font-weight: bold;
+     
 }
 
-#item_1 {
+.grid_use{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-left: 6%;
+    margin-top: 50px;
+    
+}
+
+
+#item_1{
     width: 330px;
     height: 400px;
-    margin-top: 110px;
-    position: absolute;
-    margin-left: 50px;
-    /* border: 2px solid black; */
-    border-radius: 10px;
     background-color: azure;
-    /* box-shadow: 2px 4px 4px black; */
+    /* box-shadow: 2px 4px 4px black; 
     box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
 
 }
@@ -86,108 +120,96 @@
 
 
 #item_1 img {
-    width: 300px;
-    height: 390px;
-    margin-left: 12px;
-    margin-top: -10px;
+   width: 100%;
+   height: auto;
+   margin-top: -30px;
 
 }
 
-#item_1 span {
-    position: absolute;
-    margin-top: 325px;
-    width: 200px;
-    margin-left: -260px;
-    font-size: 27px;
-    color: black;
-
+#item_1 p{
+   font-size: 22px;
+   width: 200px;
+   font-weight: bold;
+   margin-top: -75px;
+   margin-left: 85px;
+   color: black;
+   list-style-type: none;
 }
 
 #item_2 {
     width: 330px;
     height: 400px;
-    margin-top: 110px;
-    position: absolute;
-    margin-left: 500px;
-    /* border: 2px solid black; */
-    border-radius: 10px;
     background-color: azure;
-    /* box-shadow: 2px 4px 4px black; */
     box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
 
 }
 
 #item_2 img {
-    width: 330px;
-    height: 340px;
-    margin-left: 3px;
-    /* margin-top: -20px; */
+    width: 100%;
+   height: 360px;
+   margin-top: -10px;
 
 }
 
-#item_2 span {
-    position: absolute;
-    margin-top: -25px;
+#item_2 p{
+    font-size: 22px;
     width: 200px;
-    margin-left: 55px;
-    font-size: 25px;
+    font-weight: bold;
+    margin-top: -20px;
+    margin-left: 70px;
+    color: black;
+    list-style-type: none;
 
 }
 
 #item_3 {
     width: 330px;
     height: 400px;
-    margin-top: 110px;
-    position: absolute;
-    margin-left: 940px;
-    /* border: 2px solid black; */
-    border-radius: 10px;
     background-color: azure;
-    /* box-shadow: 2px 4px 4px black; */
     box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
 
 }
 
 #item_3 img {
-    width: 330px;
-    height: 320px;
-    margin-left: 3px;
-    margin-top: 12px;
-
+    width: 100%;
+    height: 340px;
+    
 }
 
-#item_3 span {
-    position: absolute;
-    margin-top: -15px;
+#item_3 p {
+    font-size: 22px;
     width: 200px;
-    margin-left: 60px;
-    font-size: 27px;
-
+    font-weight: bold;
+    margin-top: -10px;
+    margin-left: 110px;
+    color: black;
 }
 
 .Offer {
     width: 100%;
-    height: 120px;
+    height: 190px;
+    overflow: hidden;
     
 }
 
 .Offer img {
     width: 100%;
     margin-top: 60px;
-    /* margin-left: 60px; */
+    margin-left: 60px; 
 
-}
+} */
 
 /* ///////////////  Shop By Brand ///////////////// */
 
 .Shop_Brand_main{
     width: 100%;
-    height: 620px;
-    margin-top: 50px;
+    height: 670px;
+    margin-top: 70px;
     /* background-color: aqua; */
     border: 1px solid black;
     margin-top: 100px;
     border-top-right-radius: 10px;
+    overflow: hidden;
     
 }
 
@@ -205,8 +227,12 @@
     font-weight: bold;
     display: flex;
     justify-content: center;
-    margin-top: 28px;
+    margin-top: 20px;
    
+}
+.shop_brand_name_2{
+  border: 1px solid black;
+  height: 55px;
 }
 
 .shop_brand_name_2 span{
@@ -218,21 +244,22 @@
 }
 
 .shop_brand_name_2 button{
-    padding: 8px;
+    padding: 6px;
   margin-left: 1170px;
-  background-color: rgb(0, 123, 255);
+  background-color: rgb(111, 179, 251);
   border-radius: 5px;
-  margin-top: 6px;
+  margin-top: 5px;
   cursor: pointer;
 }
 
-
-
-.realme_main_div{
-    width : 250px;
-    height: 300px;
-    margin-left: 10px;
+.grid_section{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-left: 20px;
+    width: 100%;
 }
+
+
 
 .realme_main_div img{
     width: 100%;
@@ -244,8 +271,8 @@
 }
 
 .realme_main_div span{
-    margin-left: 38px;
-    font-size: 20px;
+    margin-left: 33px;
+    font-size: 19px;
 }
 
 .realme_main_div p {
@@ -253,41 +280,28 @@
     opacity: 0.8;
 }
 
-.realme_1_img{
-    
-    
-}
 
 .realme_1_img img{
-    width: 50%;
+    width: 45%;
     height: 100%;
-    margin-top: -5px;
-   
+    margin-top: -25px;
+    margin-left: 40px;
     border-radius: 10px solid black;
 }
 
 .realme_1_img p{
 font-size: 20px;
+margin-top: -10px;
 }
 
 .realme_1_img p span{
     opacity: 0.9;
     font-size: 17px;
-    margin-left: 13px;
+    margin-left: 10px;
     text-decoration:line-through;
 }
 
 
-
-
-
-
-.realme_main_div2{
-    width : 250px;
-    height: 300px;
-    margin-left: 680px;
-    margin-top: -300px;
-}
 
 .realme_main_div2 img{
     width: 100%;
@@ -300,7 +314,7 @@ font-size: 20px;
 
 .realme_main_div2 span{
     margin-left: 38px;
-    font-size: 20px;
+    font-size: 19px;
 }
 
 .realme_main_div2 p {
@@ -308,21 +322,20 @@ font-size: 20px;
     opacity: 0.8;
 }
 
-.realme_1_img{
-    
-    
-}
+
 
 .realme_2_img img{
-    width: 50%;
+    width: 40%;
     height: 100%;
-    margin-top: -5px;
-   
+    margin-top: -25px;
+   margin-left: 40px;
     border-radius: 10px solid black;
 }
 
 .realme_2_img p{
 font-size: 20px;
+margin-top: -10px;
+margin-left: 40px;
 }
 
 .realme_2_img p span{
@@ -334,17 +347,6 @@ font-size: 20px;
 
 
 
-
-
-
-
-
-.realme_main_div3{
-    width : 250px;
-    height: 300px;
-    margin-left: 340px;
-    margin-top: -300px;
-}
 
 .realme_main_div3 img{
     width: 100%;
@@ -371,15 +373,18 @@ font-size: 20px;
 }
 
 .realme_3_img img{
-    width: 50%;
+    width: 40%;
     height: 100%;
-    margin-top: -5px;
-   
+    margin-top: -25px;
+   margin-left: 40px;
     border-radius: 10px solid black;
 }
 
 .realme_3_img p{
 font-size: 20px;
+margin-top: -10px;
+margin-left: 40px;
+
 }
 
 .realme_3_img p span{
@@ -394,12 +399,7 @@ font-size: 20px;
 
 
 
-.realme_main_div4{
-    width : 250px;
-    height: 300px;
-    margin-left: 1000px;
-    margin-top: -300px;
-}
+
 
 .realme_main_div4 img{
     width: 100%;
@@ -411,30 +411,29 @@ font-size: 20px;
 }
 
 .realme_main_div4 span{
-    margin-left: 38px;
-    font-size: 20px;
+    margin-left: 50px;
+    font-size: 18px;
 }
 
 .realme_main_div4 p {
-    margin-left: 38px;
+    margin-left: 50px;
     opacity: 0.8;
 }
 
-.realme_1_img{
-    
-    
-}
+
 
 .realme_4_img img{
-    width: 50%;
+    width: 40%;
     height: 100%;
-    margin-top: -5px;
-   
+    margin-top: -25px;
+    margin-left: 50px;
     border-radius: 10px solid black;
 }
 
 .realme_4_img p{
 font-size: 20px;
+margin-left: 50px;
+margin-top: -10px;
 }
 
 .realme_4_img p span{
@@ -454,28 +453,36 @@ font-size: 20px;
     height: 530px;
     /* background-color: aqua; */
     border: 1px solid black;
-    
+    overflow: hidden;
+}
+
+.Poco_brand_name{
+    width: 100%;
+    height: 60px;
+    border: 1px solid black;
+}
+
+.grid_poco{
+    display:  grid;
+    grid-template-columns: auto auto auto auto;
 }
 
 .Poco_section_main span{
         font-size: 23px;
        margin-left: 30px;
        width: 200px;
-      
-      position: absolute;
       margin-top: 10px;
 }
 
-.Poco_section_main button{
-    padding: 8px;
-  margin-left: 1170px;
-  background-color: rgb(0, 123, 255);
-  border-radius: 5px;
-  margin-top: 8px;
-  cursor: pointer;
-  border-radius: 7px;
+#button_poco{
+padding: 5px;
+border-radius: 6px;
+margin-left: 950px;
+margin-top: 7px;
+  background-color: rgb(111, 179, 251);
+
   
-  position: absolute;
+ 
 }
 
 
@@ -485,8 +492,9 @@ font-size: 20px;
 .poco_main_div{
     width : 250px;
     height: 300px;
-    margin-left: 10px;
+   
 }
+
 
 .poco_main_div img{
     /* width: 100%; */
@@ -505,22 +513,24 @@ font-size: 20px;
 }
 
 .poco_main_div p {
-    margin-left: 5px;
+    margin-left: 40px;
     opacity: 0.8;
+    font-size: 18px;
     /* background-color: aquamarine; */
-    position: absolute;
+  
 }
 
 .poco_1_img img{
-    width: 50%;
+    width: 45%;
     height: 100%;
-    margin-top: 47px;
+    margin-top: -30px;
     margin-left: 40px;
     border-radius: 10px solid black;
 }
 
 .poco_1_img p{
 font-size: 20px;
+margin-top: -15px;
 margin-left:40px;
 }
 
@@ -539,8 +549,7 @@ margin-left:40px;
 .poco2_div{
     width : 250px;
     height: 300px;
-    margin-left: 320px;
-    margin-top: -300px;
+  
 }
 
 .poco2_div img{
@@ -560,22 +569,24 @@ margin-left:40px;
 }
 
 .poco2_div p {
-    margin-left: 5px;
+    margin-left: 40px;
     opacity: 0.8;
+    font-size: 18px;
     /* background-color: aquamarine; */
-    position: absolute;
+   
 }
 
 .poco_2_img img{
-    width: 50%;
+    width: 45%;
     height: 100%;
-    margin-top: 47px;
+    margin-top: -30px;
     margin-left: 40px;
     border-radius: 10px solid black;
 }
 
 .poco_2_img p{
 font-size: 20px;
+margin-top: -15px;
 margin-left:40px;
 }
 
@@ -591,11 +602,11 @@ margin-left:40px;
 
 
 
+
 .poco3_div{
     width : 250px;
     height: 300px;
-    margin-left: 660px;
-    margin-top: -300px;
+   
 }
 
 .poco3_div img{
@@ -614,23 +625,27 @@ margin-left:40px;
 
 }
 
+
+
 .poco3_div p {
-    margin-left: 5px;
+    margin-left: 40px;
     opacity: 0.8;
+    font-size: 18px;
     /* background-color: aquamarine; */
-    position: absolute;
+   
 }
 
 .poco_3_img img{
-    width: 50%;
+    width: 40%;
     height: 100%;
-    margin-top: 47px;
+    margin-top: -30px;
     margin-left: 40px;
     border-radius: 10px solid black;
 }
 
 .poco_3_img p{
 font-size: 20px;
+margin-top: -15px;
 margin-left:40px;
 }
 
@@ -647,12 +662,10 @@ margin-left:40px;
 
 
 
-
 .poco4_div{
     width : 250px;
     height: 300px;
-    margin-left: 980px;
-    margin-top: -300px;
+    
 }
 
 .poco4_div img{
@@ -672,22 +685,24 @@ margin-left:40px;
 }
 
 .poco4_div p {
-    margin-left: 5px;
+    margin-left: 40px;
     opacity: 0.8;
+    font-size: 18px;
     /* background-color: aquamarine; */
-    position: absolute;
+   
 }
 
 .poco_4_img img{
-    width: 50%;
+    width: 40%;
     height: 100%;
-    margin-top: 47px;
+    margin-top: -30px;
     margin-left: 40px;
     border-radius: 10px solid black;
 }
 
 .poco_4_img p{
 font-size: 20px;
+margin-top: -15px;
 margin-left:40px;
 }
 

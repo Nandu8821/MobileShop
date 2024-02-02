@@ -1,152 +1,126 @@
-import { Link } from "react-router-dom"
-import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
 
-    const [showMobileMenu, setShowMobileMenu] = useState(false);
-
-    const toggleMobileMenu = () => {
-        setShowMobileMenu(!showMobileMenu);
-    };
-
-
-
     return (
         <>
-            <div style={{ borderBottom: "1px solid black" }} className="main_header" >
-                <div className="nav_email">
-                    <Link>
-                        <img src="./images/gmail3.png" alt="gamil" />
-                        <span className="Email_txt" > Email : meenanandu016@gmail.com</span>
-
-                    </Link>
-
-                    <Link>
-                        <span className="nav_call">
-                            <img src="./images/call.png" alt="" style={{ marginTop: "-5px" }} />
-
-                            <span style={{ color: "white", marginLeft: "19px", marginTop: "15px", position: "absolute", fontSize: "13px" }}>
-                                <span className="call_txt">
-                                    Call Support : 123456789
-                                </span>
-                            </span>
-
-                        </span>
-
-                    </Link>
-
-
-                    <Link to="loginpage">
-
-                        <span className="nav_profile">
-                            <img src="./images/profile1.png" alt="wishlist" style={{ marginLeft: "820px" }} />
-                            <span className="profile_txt">Login </span>
-                        </span>
-                    </Link>
-
-                    <Link>
-
-                        <span className="nav_checkout">
-                            <img src="./images/checkout1.png" alt="wishlist" style={{ marginLeft: "690px" }} />
-                            <span className="checkout_txt">Checkout </span>
-                        </span>
-                    </Link>
-
-                    <Link>
-                        <span className="nav_wishlist">
-                            <img src="./images/wishlist.png" alt="wishlist" style={{ marginLeft: "550px" }} />
-                            <span className="wishlist_txt">My Wishlist </span>
-                        </span>
-                    </Link>
-                </div>
-
-                <div className="nav_main_icon">
-                    <div className="menu_icon" >
-                        <div className="menu_icon1" onClick={toggleMobileMenu} >&#9776;</div>
+            {/* Desktop screen view */}
+            <nav className="size_navbar">
+                <div className="upper_navbar">
+                    <div className="gmail_icon_and_email">
+                        <img src="./images/gmail3.png" />
+                        <span>Email : jeevan@123gmail.com</span>
                     </div>
-                </div>
-
-
-                <div className="nav_main">
-                    <Link to="home">
-                        <div className="main_logo">
-                            <img src="/images/main_logo.png" alt="main_logo" />
+                    <div className="call_icon_and_call_support">
+                        <img src="./images/call.png" />
+                        <span>Call Support : 1234567890</span>
+                    </div>
+                    <div></div>
+                    <div className="Wishlist_checkout_login">
+                        <div className="wishlist_upper_nav">
+                            <Link to="wishlist">
+                                <img src="./images/wishlist.png" />
+                                <span>My Wishlist</span>
+                            </Link>
                         </div>
-                    </Link>
-
-                    <div className="Links">
-                        <ul >
-                            {/* <Link to="home"><li>Home</li></Link> */}
-                            <Link to="home" ><li >Home</li></Link>
-                            <Link to="shop"><li>Shop</li></Link>
-                            <Link to="#"><li>Blog</li></Link>
-                            <Link to="#"><li>Contact Us</li></Link>
-                            <Link to="#"><li>About Us</li></Link>
-                        </ul>
-
-
-                        <span className="nav_line" > ____________________________________________________________________________________________________________</span>
-                        <span className="Search_input" >
-
-                            <input type="text" placeholder="Search Products"></input>
-
-                            <Link> <img src="./images/search.png" alt="search" />  </Link>
-                        </span>
-
-                        <span className="Select_Category" >
-                            <input type="text" placeholder="Select Category"></input>
-                            <Link> <img src="./images/downside.png" alt="downside" /></Link>
-                        </span>
-
-                        <span className="strect_line">
-                            |
-                        </span>
-
-                        <Link to="cartpage">
-                            <span className="cart_img">
-                                <img src="./images/cart.png" alt="cart" />
-                            </span>
-                        </Link>
-
-
+                        <div className="checkout_upper_nav">
+                            <Link to="admin_layout">
+                                <img src="./images/checkout1.png" />
+                                <span>Admin</span>
+                            </Link>
+                        </div>
+                        <div className="login_upper_nav">
+                            <Link to="loginpage">
+                                <img src="./images/userimg.png" />
+                                <span>Login</span>
+                            </Link>
+                        </div>
                     </div>
                 </div>
-            </div>
 
+                {/* lower navbar */}
 
+                <div className="Lower_navbar">
+                    <div className="web_logo">
+                        <div>
+                            <Link to="home"><img src="./images/main_logo.png" /></Link>
+                        </div>
+                    </div>
+                    <div className="all_pages_on_navbar">
+                        <div className="pages_name_carticon">
+                            <div className="all_pages_click">
+                                <Link to="home"><li>Home</li></Link>
+                                <Link to="shop"><li>Shop</li></Link>
+                                <Link><li>Blog</li></Link>
+                                <Link><li>Contact Us</li></Link>
+                                <Link><li>About Us</li></Link>
+                                
+                            </div>
+                            <div className="carticon_on_header">
+                                <Link to="cartpage"><img src="./images/cart.png" /></Link>
+                            </div>
+                        </div>
+                        <div className="search_on_header_category">
+                            <div className="search_on_header">
+                                <div style={{ display: "flex" }}>
+                                    <input id="search_on_header" placeholder="Search Products" type="text" />
+                                    <label className="searchicon_on_header" for="search_on_header"><img src="./images/search.png" width="30px" height="30px" /></label>
+                                </div>
+                            </div>
+                            <div className="category_on_header">
+                                <div className="category_div_header">
+                                    <span>Category</span>
+                                    <span className="arrowicon_header">
+                                    <Link> <img src="./images/downside.png" /></Link>   
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-
-
-            <div className="main_menu">
-                <img src="/images/menu_icon.png" alt="logo" />
-                <div className="main_logo_menu">
-                    <img src="/images/main_logo.png" alt="main_logo" />
-                    <span>signin</span>
+                    <div></div>
                 </div>
+            </nav>
 
-                <div className="menu_signin">
-                    <img src="/images/profile1.png" alt="profile" />
+        {/* mobile_view_navbar */}
+
+            <nav className="Mobile_view_navbar">
+                <div className="upper_navbar_mobile_view">
+                    <div className="weblogo_menu_button_mobile_view">
+                        <div className="menu_button_mobile_view">
+                            <img width="100%" height="100%" src="./images/menu__icon.png" />
+                        </div>
+                        <div className="weblogo_button_mobile_view">
+                            <Link>
+                                <img width="100%" height="100%" src="./images/main_logo.png" />
+                            </Link>
+                        </div>
+                    </div>
+                    <div></div>
+                    <div className="login_cart_icon_mobile_view">
+                        <Link to="loginpage">
+                            <span>SignIn</span>
+                            <div className="user_img_icon_mobile_view">
+                                <img width="100%" height="100%" src="./images/userimg.png" />
+                            </div>
+                        </Link>
+                        <Link to="cartpage">
+                            <div className="cart_img_icon_mobile_view">
+                                <img width="100%" height="100%" src="./images/cart.png" />
+                            </div>
+                        </Link>
+                    </div>
                 </div>
-
-                <div className="menu_cart_img">
-                <img src="/images/cart.png" alt="cart" />
+                <div className="input_search_box_searchicon">
+                   <div className="input_search_box5">
+                        <input id="search_on_mobile_view" type="text" placeholder="Search here"/>
+                   </div>
+                   <label for="search_on_mobile_view" className="searchicon_box5">
+                        <img width="100%" height="100%" src="./images/search.png" />
+                   </label>
                 </div>
-
-                <div className="menu_input">
-                   <input type="text"></input>
-                   <img src="/images/search.png" alt="search"/>
-                </div>
-                <div style={{color:"white"}}>filter</div>
-                 
-                 
-
-            </div>
-
-
-
+            </nav>
         </>
-
     )
 }
-
 export default Header;

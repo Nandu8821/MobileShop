@@ -17,6 +17,7 @@ import "./css/Registration.css"
 import "./css/registrationmediaqueries.css"
 import "./css/Header_mediaquerie.css"
 import "./css/shop.css"
+import  "./css/Footer.css"
 import "./css/shop_mediaquery.css"
 
 const App=()=>{

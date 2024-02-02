@@ -4,7 +4,9 @@ const Shop = () => {
   return (
     <>
       <div className='banner'>
-        <div></div>
+          <div className='inside_banner'>
+          
+          </div>
       </div>
       <div className='filter'>
         <h4>Filters</h4>
@@ -102,6 +104,8 @@ const Shop = () => {
 
         </div>
       </div>
+
+
     </>
   )
 }

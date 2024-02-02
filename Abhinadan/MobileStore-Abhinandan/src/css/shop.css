@@ -1,7 +1,13 @@
 
 .banner {
       width: 100%;
-      height: 400px;
+      height: auto;
+       
+}
+
+.inside_banner{
+      width: 100%;
+      height: 500px;
       /* background-color: blueviolet; */
       background-image: url(/public/images/shop1.jpg);
       overflow: hidden;
@@ -59,7 +65,9 @@
       margin-left: 260px;
       height: 150px;
       margin-top: -400px;
-      background-color: aquamarine;
+      background-repeat: no-repeat;
+      overflow: hidden;
+      background-position: center;
       background-image: url(/public/images/shop.jpg);
 }
 
@@ -68,9 +76,8 @@
       grid-template-columns: auto auto auto auto;
        margin-left: 20%;
        margin-top: 15px;
+       padding-bottom: 20px;
        
-      
-      
 }
 
 .shop1{

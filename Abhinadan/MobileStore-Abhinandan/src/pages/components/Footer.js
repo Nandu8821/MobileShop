@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 const Footer = () => {
 
@@ -11,16 +12,16 @@ const Footer = () => {
                         <br />
                         <div className="social-media">
                             <div className="social-media-insta">
-                                <img src="./images/insta-logo.png" />
+                                <Link><img src="./images/insta-logo.png" /></Link>
                             </div>
                             <div className="social-media-facebook">
-                                <img src="./images/facebook-logo.png" />
+                                <Link><img src="./images/facebook-logo.png" /></Link>
                             </div>
                             <div className="social-media-linkedin">
-                                <img src="./images/linkedin-logo.png" />
+                                <Link><img src="./images/linkedin-logo.png" /></Link>
                             </div>
                             <div className="social-media-twitter">
-                                <img src="./images/twitter-logo.png" />
+                                <Link><img src="./images/twitter-logo.png" /></Link>
                             </div>
                         </div>
                     </div>
@@ -80,4 +81,4 @@ const Footer = () => {
     )
 }
 
-export default Footer;
+export default Footer
